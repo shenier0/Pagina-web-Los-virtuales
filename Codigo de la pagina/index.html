@@ -1,67 +1,198 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Los virtuales</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="img_y_videos/favicon.png" type="los virtuales/favicon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Los Virtuales</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
-
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="quienes-somos.html">Quiénes somos</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="logo">
+      <h1>Los Virtuales</h1>
+      <p>Consultoría Tecnológica</p>
+    </div>
+
+    <!-- MENÚ CENTRADO -->
+    <nav class="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#consulta">Consulta</a>
+      <a href="#historia">Nuestra Historia</a>
+      <a href="#recuperacion">Recuperación de Datos</a>
+      <a href="#sistemas">Sistemas</a>
+      <a href="#contactos">Contactos</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Bienvenidos a Los Virtuales</h1>
-      <p>Tu solución digital para el éxito empresarial.</p>
-    </section>
+  <!-- ================= INICIO ================= -->
+  <section id="inicio" class="section active">
+    <div class="hero">
+      <h2>Soluciones Tecnológicas para tu Empresa</h2>
+      <p>
+        En Los Virtuales ofrecemos consultoría IT, recuperación de datos,
+        mantenimiento de sistemas y soporte tecnológico profesional.
+      </p>
+      <a href="#consulta" class="btn go-section">Solicitar Consulta</a>
+    </div>
 
-    <section class="services">
-      <h2>Nuestros Servicios</h2>
-      <div class="service-item">
-        <h3>Desarrollo Web</h3>
-        <p>Creamos sitios web personalizados y optimizados para tu negocio.</p>
+    <!-- TARJETAS -->
+    <div class="cards">
+      <div class="card go-section" data-target="consulta">
+        <h3>Consultoría IT</h3>
+        <p>Asesoramiento tecnológico profesional para empresas.</p>
       </div>
-      <div class="service-item">
-        <h3>Marketing Digital</h3>
-        <p>Impulsa tu presencia en línea con nuestras estrategias de marketing digital.</p>
+
+      <div class="card go-section" data-target="recuperacion">
+        <h3>Recuperación de Datos</h3>
+        <p>Recuperamos archivos y datos eliminados o dañados.</p>
       </div>
-      <div class="service-item">
-        <h3>Consultoría Tecnológica</h3>
-        <p>Asesoramos sobre las mejores soluciones tecnológicas para tu empresa.</p>
+
+      <div class="card go-section" data-target="sistemas">
+        <h3>Sistemas</h3>
+        <p>Instalación y mantenimiento de equipos y servidores.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="contact">
-      <h2>Contáctanos</h2>
-      <form action="submit_form.php" method="post">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
+  <!-- ================= CONSULTA ================= -->
+  <section id="consulta" class="section">
+    <h2>Consulta</h2>
+    <p class="section-text">
+      Completa el formulario y nos pondremos en contacto contigo.
+    </p>
 
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required>
+    <form class="consulta-form">
+      <div class="form-group">
+        <input type="text" placeholder="Nombre" required>
+      </div>
 
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" required></textarea>
+      <div class="form-group">
+        <input type="text" placeholder="Apellido" required>
+      </div>
 
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
+      <div class="form-group">
+        <input type="email" placeholder="Gmail" required>
+      </div>
 
-  <footer>
-    <p> &copy; 2024 Los Virtuales. Todos los derechos reservados.</p>
+      <div class="form-group">
+        <textarea rows="6" placeholder="Problema o pedido..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Enviar Consulta</button>
+    </form>
+  </section>
+
+  <!-- ================= HISTORIA ================= -->
+  <section id="historia" class="section">
+    <h2>Nuestra Historia</h2>
+    <p>
+      Desde 2024, Los Virtuales ayuda a empresas y particulares
+      a resolver desafíos tecnológicos con soluciones innovadoras.
+    </p>
+  </section>
+
+  <!-- ================= RECUPERACIÓN ================= -->
+  <section id="recuperacion" class="section">
+    <h2>Recuperación de Datos</h2>
+    <p>
+      Recuperamos archivos borrados y datos de discos duros dañados,
+      memorias USB y sistemas RAID.
+    </p>
+  </section>
+
+  <!-- ================= SISTEMAS ================= -->
+  <section id="sistemas" class="section">
+    <h2>Sistemas</h2>
+    <p>
+      Instalación, configuración y mantenimiento de equipos,
+      redes y servidores empresariales.
+    </p>
+  </section>
+
+  <!-- ================= CONTACTOS ================= -->
+  <section id="contactos" class="section">
+    <h2>Contactos</h2>
+    <p>Email: info@losvirtuales.com</p>
+    <p>Teléfono: +34 600 000 000</p>
+    <p>Ubicación: España</p>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- LOGO -->
+      <div class="footer-logo">
+        <!-- Sustituye logo.png por tu logo -->
+        <img src="logo.png" alt="Los Virtuales">
+      </div>
+
+      <!-- DERECHOS -->
+      <div class="footer-center">
+        <p>&copy; 2025 Los Virtuales</p>
+        <p>Todos los derechos reservados.</p>
+      </div>
+
+      <!-- REDES SOCIALES -->
+      <div class="footer-social">
+        <a href="#" title="Facebook">📘</a>
+        <a href="#" title="Instagram">📷</a>
+        <a href="#" title="LinkedIn">💼</a>
+        <a href="#" title="WhatsApp">💬</a>
+      </div>
+
+    </div>
   </footer>
-  
+
+  <!-- ================= SCRIPT ================= -->
+  <script>
+    const links = document.querySelectorAll('.menu a, .go-section');
+    const sections = document.querySelectorAll('.section');
+
+    function showSection(id) {
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+
+      const target = document.getElementById(id);
+
+      if (target) {
+        target.classList.add('active');
+
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+    }
+
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        let targetId = '';
+
+        if (this.dataset.target) {
+          targetId = this.dataset.target;
+        } else {
+          targetId = this.getAttribute('href').replace('#', '');
+        }
+
+        showSection(targetId);
+      });
+    });
+
+    // Evitar envío real del formulario
+    const form = document.querySelector('.consulta-form');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Consulta enviada correctamente.');
+      form.reset();
+    });
+  </script>
+
 </body>
 </html>

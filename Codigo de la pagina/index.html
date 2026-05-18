@@ -4,18 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Los Virtuales</title>
+
   <link rel="stylesheet" href="index.css" />
+
+  <link rel="icon" href="img_y_videos/Los virtuales  favicon.ico" type="image/x-icon">
+
 </head>
+
 <body>
 
   <!-- ================= HEADER ================= -->
+
   <header class="header">
+
     <div class="logo">
       <h1>Los Virtuales</h1>
       <p>Consultoría Tecnológica</p>
     </div>
 
-    <!-- MENÚ CENTRADO -->
+    <!-- MENÚ -->
+
     <nav class="menu">
       <a href="#inicio">Inicio</a>
       <a href="#consulta">Consulta</a>
@@ -24,118 +32,430 @@
       <a href="#sistemas">Sistemas</a>
       <a href="#contactos">Contactos</a>
     </nav>
+
   </header>
 
   <!-- ================= INICIO ================= -->
+
   <section id="inicio" class="section active">
+
     <div class="hero">
-      <h2>Soluciones Tecnológicas para tu Empresa</h2>
-      <p>
-        En Los Virtuales ofrecemos consultoría IT, recuperación de datos,
-        mantenimiento de sistemas y soporte tecnológico profesional.
+
+      <h2 class="text_center">Soluciones Tecnológicas</h2>
+      <h2 class="text_center">Para Empresas y Profesionales</h2>
+
+      <hr class="Linea_azul">
+
+      <br>
+
+      <p class="text_left">
+        En <strong>Los Virtuales</strong> ofrecemos soluciones tecnológicas modernas,
+        seguras y adaptadas a las necesidades de cada cliente.
+        Nuestro objetivo es ayudarte a optimizar tus sistemas,
+        proteger tu información y mejorar el rendimiento de tu empresa.
       </p>
-      <a href="#consulta" class="btn go-section">Solicitar Consulta</a>
+
+      <br>
+
+      <p class="text_left">
+        Contamos con experiencia en consultoría IT, mantenimiento de sistemas,
+        soporte técnico, instalación de redes y recuperación de datos.
+        Trabajamos con rapidez, profesionalidad y un trato cercano.
+      </p>
+
+      <br>
+
+      <p class="text_left">
+        Ya seas una pequeña empresa, un negocio local o un usuario particular,
+        podemos ayudarte a resolver problemas tecnológicos de manera eficiente.
+      </p>
+
+      <br>
+
+      <a href="#consulta" class="btn go-section">
+        <strong>Solicitar Consulta</strong>
+      </a>
+
     </div>
 
-    <!-- TARJETAS -->
+    <br>
+
+    <hr class="Linea_azul">
+
+    <br>
+
+    <h2 class="text_center">Nuestros Servicios</h2>
+
+    <br>
+
     <div class="cards">
+
       <div class="card go-section" data-target="consulta">
         <h3>Consultoría IT</h3>
-        <p>Asesoramiento tecnológico profesional para empresas.</p>
+        <p>
+          Asesoramiento tecnológico personalizado para optimizar
+          infraestructuras y procesos empresariales.
+        </p>
       </div>
 
       <div class="card go-section" data-target="recuperacion">
         <h3>Recuperación de Datos</h3>
-        <p>Recuperamos archivos y datos eliminados o dañados.</p>
+        <p>
+          Recuperación profesional de archivos eliminados,
+          discos dañados y sistemas corruptos.
+        </p>
       </div>
 
       <div class="card go-section" data-target="sistemas">
-        <h3>Sistemas</h3>
-        <p>Instalación y mantenimiento de equipos y servidores.</p>
+        <h3>Mantenimiento de Sistemas</h3>
+        <p>
+          Instalación, actualización y mantenimiento de equipos,
+          servidores y redes empresariales.
+        </p>
       </div>
+
     </div>
+
   </section>
 
   <!-- ================= CONSULTA ================= -->
+
   <section id="consulta" class="section">
+
     <h2>Consulta</h2>
-    <p class="section-text">
-      Completa el formulario y nos pondremos en contacto contigo.
+
+    <hr class="Linea_azul">
+
+    <p class="text_left">
+      Nuestro equipo analizará tu problema y te ofrecerá una solución
+      adaptada a tus necesidades. Completa el formulario con toda la
+      información posible para que podamos ayudarte de forma rápida y precisa.
     </p>
 
+    <br>
+
+    <p class="text_left">
+      Atendemos incidencias relacionadas con:
+    </p>
+
+    <br>
+
+    <ul class="lista-servicios">
+      <li>✔ Problemas informáticos y soporte técnico</li>
+      <li>✔ Recuperación de archivos y datos</li>
+      <li>✔ Instalación y configuración de sistemas</li>
+      <li>✔ Redes y servidores</li>
+      <li>✔ Optimización y seguridad informática</li>
+    </ul>
+
+    <br>
+
     <form class="consulta-form">
+
+      <h2><strong>Datos Personales:</strong></h2>
+
+      <br>
+
       <div class="form-group">
-        <input type="text" placeholder="Nombre" required>
+        <input type="text" placeholder="Nombre:" required>
       </div>
 
       <div class="form-group">
-        <input type="text" placeholder="Apellido" required>
+        <input type="text" placeholder="Apellido:" required>
       </div>
 
       <div class="form-group">
-        <input type="email" placeholder="Gmail" required>
+        <input type="email" placeholder="Correo electrónico:" required>
       </div>
 
       <div class="form-group">
-        <textarea rows="6" placeholder="Problema o pedido..." required></textarea>
+        <input type="tel" placeholder="Teléfono:" required>
       </div>
 
-      <button type="submit" class="btn">Enviar Consulta</button>
+      <div class="form-group">
+        <textarea rows="6" placeholder="Problema o consulta..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn">
+        Enviar Consulta
+      </button>
+
     </form>
+
   </section>
 
   <!-- ================= HISTORIA ================= -->
+
   <section id="historia" class="section">
+
     <h2>Nuestra Historia</h2>
-    <p>
-      Desde 2024, Los Virtuales ayuda a empresas y particulares
-      a resolver desafíos tecnológicos con soluciones innovadoras.
-    </p>
+
+    <hr class="Linea_azul">
+
+    <section class="mapa">
+
+      <p class="text_left">
+        Los Virtuales nació como una idea entre compañeros apasionados por la tecnología
+        mientras estudiábamos en el Centro de Formación Somorrostro, en Muskiz.
+        Compartíamos la misma motivación: aprender, innovar y crear soluciones útiles
+        para ayudar a personas y empresas.
+      </p>
+
+      <br>
+
+      <p class="text_left">
+        Lo que comenzó como pequeños proyectos académicos fue evolucionando poco a poco
+        hasta convertirse en una consultoría tecnológica con servicios profesionales.
+        Con esfuerzo y dedicación conseguimos desarrollar conocimientos en sistemas,
+        redes, soporte técnico y recuperación de datos.
+      </p>
+
+      <br>
+
+      <p class="text_left">
+        Actualmente trabajamos ofreciendo soluciones modernas y seguras,
+        siempre priorizando la confianza, la cercanía con el cliente
+        y la calidad del servicio.
+      </p>
+
+      <br>
+
+      <h2>Donde Todo Empezó...</h2>
+
+      <br>
+
+      <div class="carousel">
+
+        <div class="track">
+
+          <img src="img_y_videos/somo.png" alt="Centro Somorrostro">
+
+          <img src="img_y_videos/todos.jpeg" alt="Nosotros en Somorrostro">
+
+          <img src="img_y_videos/iamgen 1.png" alt="Equipo de Los Virtuales">
+
+        </div>
+
+      </div>
+
+    </section>
+
   </section>
 
   <!-- ================= RECUPERACIÓN ================= -->
+
   <section id="recuperacion" class="section">
+
     <h2>Recuperación de Datos</h2>
-    <p>
-      Recuperamos archivos borrados y datos de discos duros dañados,
-      memorias USB y sistemas RAID.
+
+    <hr class="Linea_azul">
+
+    <p class="text_left">
+      En Los Virtuales entendemos la importancia de tu información.
+      Por eso ofrecemos servicios especializados en recuperación de datos
+      para discos duros, memorias USB, SSD y sistemas RAID.
     </p>
+
+    <br>
+
+    <p class="text_left">
+      Podemos recuperar archivos eliminados accidentalmente,
+      sistemas dañados por fallos eléctricos, errores del sistema operativo,
+      virus o corrupción de datos.
+    </p>
+
+    <br>
+
+    <p class="text_left">
+      Utilizamos herramientas profesionales y procedimientos seguros
+      para maximizar las posibilidades de recuperación sin comprometer
+      la integridad de tus dispositivos.
+    </p>
+
+    <br>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Discos Duros</h3>
+        <p>Recuperación de información en HDD y SSD dañados.</p>
+      </div>
+
+      <div class="card">
+        <h3>Memorias USB</h3>
+        <p>Archivos eliminados o unidades corruptas.</p>
+      </div>
+
+      <div class="card">
+        <h3>Sistemas RAID</h3>
+        <p>Reconstrucción y recuperación de servidores empresariales.</p>
+      </div>
+
+    </div>
+
   </section>
 
   <!-- ================= SISTEMAS ================= -->
+
   <section id="sistemas" class="section">
-    <h2>Sistemas</h2>
-    <p>
-      Instalación, configuración y mantenimiento de equipos,
-      redes y servidores empresariales.
-    </p>
+
+    
+  <h2>Sistemas</h2>
+
+  <hr class="Linea_azul">
+
+  <p class="text_left">
+    En Los Virtuales ofrecemos soluciones completas para el mantenimiento,
+    reparación y optimización de sistemas informáticos tanto para empresas
+    como para particulares.
+  </p>
+
+  <br>
+
+  <p class="text_left">
+    Nuestro objetivo es garantizar que tus equipos funcionen de forma rápida,
+    segura y estable, evitando problemas técnicos y mejorando el rendimiento
+    de toda tu infraestructura tecnológica.
+  </p>
+
+  <br><br>
+
+  <!-- ================= Reparación de Ordenadores ================= -->
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>Reparación de Ordenadores</h3>
+
+      <p>
+        Diagnosticamos y solucionamos fallos en ordenadores,
+        portátiles y equipos informáticos.
+      </p>
+
+      <br>
+
+      <p>
+        Reparamos problemas de hardware, sistemas operativos,
+        virus, lentitud y errores de arranque.
+      </p>
+
+    </div>
+
+    <!-- ================= Creación de Servidores ================= -->
+
+    <div class="card">
+
+      <h3>Creación de Servidores</h3>
+
+      <p>
+        Instalamos y configuramos servidores adaptados
+        a las necesidades de cada empresa.
+      </p>
+
+      <br>
+
+      <p>
+        Trabajamos con servidores Windows y Linux,
+        almacenamiento compartido y copias de seguridad.
+      </p>
+
+    </div>
+
+    <!-- ================= Mantenimiento de Sistemas ================= -->
+
+    <div class="card">
+
+      <h3>Mantenimiento de Sistemas</h3>
+
+      <p>
+        Realizamos mantenimiento preventivo y optimización
+        de equipos para mejorar su estabilidad y rendimiento.
+      </p>
+
+      <br>
+
+      <p>
+        Actualizamos sistemas, limpiamos equipos y prevenimos
+        fallos antes de que afecten al trabajo diario.
+      </p>
+
+    </div>
+
+  </div>
+
+  <br><br>
+
+  <p class="text_center">
+    Además, ofrecemos soporte técnico personalizado,
+    configuración de redes y soluciones de seguridad informática
+    para proteger tus dispositivos y tu información.
+  </p>
+
   </section>
 
   <!-- ================= CONTACTOS ================= -->
+
   <section id="contactos" class="section">
+
     <h2>Contactos</h2>
-    <p>Email: info@losvirtuales.com</p>
-    <p>Teléfono: +34 600 000 000</p>
-    <p>Ubicación: España</p>
+
+    <hr class="Linea_azul">
+
+    <p>
+      Puedes comunicarte con nosotros a través de cualquiera
+      de los siguientes medios:
+    </p>
+
+    <br>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Email</h3>
+        <p>info@losvirtuales.com</p>
+      </div>
+
+      <div class="card">
+        <h3>Teléfono</h3>
+        <p>+34 600 000 000</p>
+      </div>
+
+      <div class="card">
+        <h3>Ubicación</h3>
+        <p>Bilbao, España</p>
+      </div>
+
+    </div>
+
+    <br><br>
+
+    <iframe
+      src="https://www.google.com/maps?q=Bilbao+Centro&output=embed"
+      width="100%"
+      height="400"
+      style="border:0; border-radius: 10px;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+
   </section>
 
   <!-- ================= FOOTER ================= -->
+
   <footer class="footer">
+
     <div class="footer-container">
 
-      <!-- LOGO -->
       <div class="footer-logo">
-        <!-- Sustituye logo.png por tu logo -->
-        <img src="logo.png" alt="Los Virtuales">
+        <img src="img_y_videos/Los virtuales.png" alt="Los Virtuales">
       </div>
 
-      <!-- DERECHOS -->
       <div class="footer-center">
         <p>&copy; 2025 Los Virtuales</p>
         <p>Todos los derechos reservados.</p>
       </div>
 
-      <!-- REDES SOCIALES -->
       <div class="footer-social">
         <a href="#" title="Facebook">📘</a>
         <a href="#" title="Instagram">📷</a>
@@ -144,14 +464,32 @@
       </div>
 
     </div>
+
   </footer>
 
   <!-- ================= SCRIPT ================= -->
+
   <script>
+
+    let index = 0;
+
+    const track = document.querySelector(".track");
+
+    const slides = document.querySelectorAll(".track img");
+
+    function moveSlide() {
+      index = (index + 1) % slides.length;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    setInterval(moveSlide, 3000);
+
     const links = document.querySelectorAll('.menu a, .go-section');
+
     const sections = document.querySelectorAll('.section');
 
     function showSection(id) {
+
       sections.forEach(section => {
         section.classList.remove('active');
       });
@@ -159,17 +497,22 @@
       const target = document.getElementById(id);
 
       if (target) {
+
         target.classList.add('active');
 
         window.scrollTo({
           top: 0,
           behavior: 'smooth'
         });
+
       }
+
     }
 
     links.forEach(link => {
+
       link.addEventListener('click', function(e) {
+
         e.preventDefault();
 
         let targetId = '';
@@ -181,17 +524,23 @@
         }
 
         showSection(targetId);
+
       });
+
     });
 
-    // Evitar envío real del formulario
     const form = document.querySelector('.consulta-form');
 
     form.addEventListener('submit', function(e) {
+
       e.preventDefault();
+
       alert('Consulta enviada correctamente.');
+
       form.reset();
+
     });
+
   </script>
 
 </body>
